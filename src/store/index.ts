@@ -1,14 +1,13 @@
-import { UploadFile } from 'antd';
 import { create } from 'zustand';
 
 interface StoreType {
-  docFile: UploadFile<any> | null;
+  docFile: File | null;
   uUploadFile: (...args: any[]) => void;
 }
 
 const useStore = create<StoreType>((set) => ({
   docFile: null,
-  uUploadFile: (file: UploadFile) => set(() => ({ docFile: file })),
+  uUploadFile: (file: File) => set(() => ({ docFile: file })),
 }));
 
 export default useStore;
