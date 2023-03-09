@@ -43,6 +43,10 @@
       "prettier --parser=typescript --write"
     ]
   },
+  "dependencies": {
+    "@fluentui/react-components": "^9.16.0",
+    "mammoth": "^1.5.1"
+  },
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
