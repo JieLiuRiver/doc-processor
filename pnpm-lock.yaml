@@ -9,15 +9,20 @@ specifiers:
   '@types/react': ^18.0.0
   '@types/react-dom': ^18.0.0
   '@umijs/lint': ^4.0.0
+  '@xmldom/xmldom': ^0.8.6
   ahooks: ^3.7.5
   antd: ^5.3.0
+  docxtemplater: ^3.34.3
   dumi: ^2.0.2
   eslint: ^8.23.0
+  fast-deep-equal: ^3.1.3
   father: ^4.1.0
+  file-saver: ^2.0.5
   husky: ^8.0.1
   lint-staged: ^13.0.3
   lodash: ^4.17.21
   mammoth: ^1.5.1
+  pizzip: ^3.1.4
   prettier: ^2.7.1
   prettier-plugin-organize-imports: ^3.0.0
   prettier-plugin-packagejson: ^2.2.18
@@ -29,10 +34,15 @@ specifiers:
 
 dependencies:
   '@ant-design/icons': registry.npmmirror.com/@ant-design/icons/5.0.1_biqbaboplfbrettd7655fr4n2y
+  '@xmldom/xmldom': registry.npmmirror.com/@xmldom/xmldom/0.8.6
   ahooks: registry.npmmirror.com/ahooks/3.7.5_react@18.2.0
   antd: registry.npmmirror.com/antd/5.3.0_biqbaboplfbrettd7655fr4n2y
+  docxtemplater: registry.npmmirror.com/docxtemplater/3.34.3
+  fast-deep-equal: registry.npmmirror.com/fast-deep-equal/3.1.3
+  file-saver: registry.npmmirror.com/file-saver/2.0.5
   lodash: registry.npmmirror.com/lodash/4.17.21
   mammoth: registry.npmmirror.com/mammoth/1.5.1
+  pizzip: registry.npmmirror.com/pizzip/3.1.4
   quill: registry.npmmirror.com/quill/1.3.7
   zustand: registry.npmmirror.com/zustand/4.3.6_react@18.2.0
 
@@ -3699,6 +3709,13 @@ packages:
       - supports-color
     dev: true
 
+  registry.npmmirror.com/@xmldom/xmldom/0.8.6:
+    resolution: {integrity: sha512-uRjjusqpoqfmRkTaNuLJ2VohVr67Q5YwDATW3VU7PfzTj6IRaihGrYI7zckGZjxQPBIp63nfvJbM+Yu5ICh0Bg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@xmldom/xmldom/-/xmldom-0.8.6.tgz}
+    name: '@xmldom/xmldom'
+    version: 0.8.6
+    engines: {node: '>=10.0.0'}
+    dev: false
+
   registry.npmmirror.com/JSONStream/1.3.5:
     resolution: {integrity: sha512-E+iruNOY8VV9s4JEbe1aNEm6MiszPRr/UfcHMz0TQh1BXSxHK+ASV1R6W4HpjBhSeS+54PIsAMCBmwD06LLsqQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/JSONStream/-/JSONStream-1.3.5.tgz}
     name: JSONStream
@@ -5756,6 +5773,15 @@ packages:
       esutils: registry.npmmirror.com/esutils/2.0.3
     dev: true
 
+  registry.npmmirror.com/docxtemplater/3.34.3:
+    resolution: {integrity: sha512-F+WNhyj42EOlrtXHvOpMipP9s+VqD8eEdaDpQxgVxdvMc7iEIjsCUq3rS2+UQsKQ8uADTJmwc016JfE6AG/DEQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/docxtemplater/-/docxtemplater-3.34.3.tgz}
+    name: docxtemplater
+    version: 3.34.3
+    engines: {node: '>=0.10'}
+    dependencies:
+      '@xmldom/xmldom': registry.npmmirror.com/@xmldom/xmldom/0.8.6
+    dev: false
+
   registry.npmmirror.com/dom-align/1.12.4:
     resolution: {integrity: sha512-R8LUSEay/68zE5c8/3BDxiTEvgb4xZTF0RKmAHfiEVN3klfIpXfi2/QCoiWPccVQ0J/ZGdz9OjzL4uJEP/MRAw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/dom-align/-/dom-align-1.12.4.tgz}
     name: dom-align
@@ -6690,7 +6716,6 @@ packages:
     resolution: {integrity: sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz}
     name: fast-deep-equal
     version: 3.1.3
-    dev: true
 
   registry.npmmirror.com/fast-diff/1.1.2:
     resolution: {integrity: sha1-S2LEK44D3j+EhGC2OQeZIGldAVQ=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/fast-diff/download/fast-diff-1.1.2.tgz}
@@ -6834,6 +6859,12 @@ packages:
     version: 0.1.0
     engines: {node: '>=0.10.0'}
     dev: true
+
+  registry.npmmirror.com/file-saver/2.0.5:
+    resolution: {integrity: sha512-P9bmyZ3h/PRG+Nzga+rbdI4OEpNDzAVyy74uVO9ATgzLK6VtAsYybF/+TOCvrc0MO793d6+42lLyZTw7/ArVzA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/file-saver/-/file-saver-2.0.5.tgz}
+    name: file-saver
+    version: 2.0.5
+    dev: false
 
   registry.npmmirror.com/file-system-cache/2.0.0:
     resolution: {integrity: sha512-QlYut2ZtxRgdW/dboSmiKZWM8FsnpLaLI549hN/RWgwn3FawSil7Jc2n7nFHheclvYxa4LJqwEOvNUYv9VsCXg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/file-system-cache/-/file-system-cache-2.0.0.tgz}
@@ -10902,6 +10933,12 @@ packages:
     name: pako
     version: 1.0.11
 
+  registry.npmmirror.com/pako/2.1.0:
+    resolution: {integrity: sha512-w+eufiZ1WuJYgPXbV/PO3NCMEc3xqylkKHzp8bxp1uW4qaSNQUkwmLLEc3kKsfz8lpV1F8Ht3U1Cm+9Srog2ug==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/pako/-/pako-2.1.0.tgz}
+    name: pako
+    version: 2.1.0
+    dev: false
+
   registry.npmmirror.com/parallel-transform/1.2.0:
     resolution: {integrity: sha512-P2vSmIu38uIlvdcU7fDkyrxj33gTUy/ABO5ZUbGowxNCopBq/OoD42bP4UmMrJoPyk4Uqf0mu3mtWBhHCZD8yg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/parallel-transform/-/parallel-transform-1.2.0.tgz}
     name: parallel-transform
@@ -11190,6 +11227,14 @@ packages:
     version: 4.0.5
     engines: {node: '>= 6'}
     dev: true
+
+  registry.npmmirror.com/pizzip/3.1.4:
+    resolution: {integrity: sha512-08yol1Of5Og1E0a1R56c+Z1jVkvfTEBUouwG9WYwCqpj8BjdcpEpLgZsrdLFNQYRgtxK0OOe0JpmBWJdrPr6Dg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/pizzip/-/pizzip-3.1.4.tgz}
+    name: pizzip
+    version: 3.1.4
+    dependencies:
+      pako: registry.npmmirror.com/pako/2.1.0
+    dev: false
 
   registry.npmmirror.com/pkg-up/3.1.0:
     resolution: {integrity: sha512-nDywThFk1i4BQK4twPQ6TA4RT8bDY96yeuCVBWL3ePARCiEKDRSrNGbFIgUJpLp+XeIR65v8ra7WuJOFUBtkMA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/pkg-up/-/pkg-up-3.1.0.tgz}
